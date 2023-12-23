@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, CheckBox, Img, Text, NavbarPage, } from "components";
+import { Button, CheckBox, Img, Text, NavbarPage, Footer, } from "components";
 import { useNavigate } from 'react-router-dom';
 import { Menu, X } from "lucide-react";
 
@@ -168,47 +168,7 @@ const Recruiter = () => {
                     
           </div>
         </div>
-          <footer className="bg-gray-800 flex items-center justify-center mt-[-5px] mx-auto w-full z-[1]">
-            <div className="flex flex-row md:gap-5 items-center justify-center mb-[21px] ml-[67px] mr-[105px] mt-[26px] w-[89%]">
-              <Text
-                className="text-white-A700 text-xl sm:text-[13px]"
-                size="txtInterRegular20"
-              >
-                Copyright{" "}
-              </Text>
-              <Text
-                className="md:ml-[0] ml-[38px] text-white-A700 text-xl sm:text-[13px]"
-                size="txtInterRegular20"
-              >
-                2023 pilarcendekia. Allright reserved
-              </Text>
-              <Img
-                className="h-[30px] md:ml-[0] ml-[624px] md:mt-0 mt-0.5 w-[30px]"
-                src="images/img_group.svg"
-                alt="group"
-              />
-              <Img
-                className="h-[22px] md:ml-[0] ml-[9px] w-[21px]"
-                src="images/img_info_white_a700.svg"
-                alt="info"
-              />
-              <Img
-                className="h-[25px] md:ml-[0] ml-[9px] w-[26px]"
-                src="images/img_riwhatsappfill_white_a700.svg"
-                alt="riwhatsappfill"
-              />
-              <Img
-                className="h-[27px] md:ml-[0] ml-[9px] w-[27px]"
-                src="images/img_icbaselineemail_white_a700.svg"
-                alt="icbaselineemail"
-              />
-              <Img
-                className="h-[23px] md:ml-[0] ml-[9px]"
-                src="images/img_facebook_white_a700.svg"
-                alt="facebook"
-              />
-            </div>
-          </footer>
+         <Footer />
         </div>
         </div>
         </div>

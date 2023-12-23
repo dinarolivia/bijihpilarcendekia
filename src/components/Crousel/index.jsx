@@ -6,7 +6,7 @@ const Products = [
   {
     id: 1,
     name: "Andini, siswi SMP",
-    image: "images/img_sma1.png",
+    image: "images/smp.jpg",
     description:
       "Sebagai siswa SMP, saya awalnya merasa kesulitan dengan beberapa mata pelajaran. Setelah mengikuti bimbingan belajar di sini, saya lebih memahami konsep-konsep yang sulit dan dapat mengatasi soal-soal ujian dengan lebih baik. Guru-guru sangat ramah dan selalu siap membantu.",
   },
@@ -19,8 +19,8 @@ const Products = [
   },
   {
     id: 3,
-    name: "rahmat, anak Sma",
-    image: "images/img_sma1.png",
+    name: "rahmat, siswa SD",
+    image: "images/sd.jpg",
     description:
     "Saya senang sekali ikut bimbingan belajar di Pilar Cendekia Guru-guru di sini baik banget, mereka selalu sabar menjelaskan pelajaran. Saya jadi lebih paham matematika dan bahasa Indonesia. Belajar jadi lebih seru, terutama saat main permainan edukatif bareng teman-teman!",
   },

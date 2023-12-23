@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, CheckBox, Img, Input, NavbarPage, Text } from "components";
+import { Button, CheckBox, Footer, Img, Input, NavbarPage, Text } from "components";
 import { Menu, X } from "lucide-react";
 
 
@@ -286,47 +286,7 @@ const DaftarPage = () => {
                 </div>
               </div>
             </div>
-            <footer className="bg-gray-800 flex items-center justify-center mt-auto mx-auto w-full">
-              <div className="flex flex-row md:gap-5 items-center justify-center ml-[73px] mr-[85px] my-[25px] w-[90%]">
-                <Text
-                  className="text-white-A700 text-xl"
-                  size="txtInterRegular20"
-                >
-                  Copyright{" "}
-                </Text>
-                <Text
-                  className="md:ml-[0] ml-[38px] text-white-A700 text-xl"
-                  size="txtInterRegular20"
-                >
-                  2023 pilarcendekia. Allright reserved
-                </Text>
-                <Img
-                  className="h-[30px] md:ml-[0] ml-[638px] w-[30px]"
-                  src="images/img_group.svg"
-                  alt="group"
-                />
-                <Img
-                  className="h-[22px] md:ml-[0] ml-[9px] w-[21px]"
-                  src="images/img_info_white_a700.svg"
-                  alt="info"
-                />
-                <Img
-                  className="h-[25px] md:ml-[0] ml-[9px] w-[26px]"
-                  src="images/img_riwhatsappfill_white_a700.svg"
-                  alt="riwhatsappfill"
-                />
-                <Img
-                  className="h-[27px] md:ml-[0] ml-[9px] w-[27px]"
-                  src="images/img_icbaselineemail_white_a700.svg"
-                  alt="icbaselineemail"
-                />
-                <Img
-                  className="h-[23px] md:ml-[0] ml-[9px]"
-                  src="images/img_facebook_white_a700.svg"
-                  alt="facebook"
-                />
-              </div>
-            </footer>
+           <Footer/>
           </div>
         </div>
       </div>

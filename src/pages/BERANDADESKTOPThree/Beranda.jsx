@@ -1,16 +1,19 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Button, Img, Text, Crousel, NavbarPage} from "components";
+import { Button, Img, Text, Crousel, NavbarPage, Footer } from "components";
 import { Menu, X } from "lucide-react";
+import { GrYoutube } from "react-icons/gr";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { CiMail, CiFacebook } from "react-icons/ci";
 
 const Program = () => {
   const [isActive, setIsActive] = useState(false);
 
   const toggleNavbar = () => {
     setIsActive(!isActive);
-  }
+  };
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <>
       <div className="bg-blue-100 flex flex-col font-inter items-center justify-start mx-auto w-full">
@@ -26,17 +29,19 @@ const Program = () => {
               />
               {/* Menu */}
               <div className="sm:hidden">
-              <NavbarPage />
+                <NavbarPage />
               </div>
-              <div className="mr-10 my-5 text-3xl hidden sm:block" >
-              <button onClick={toggleNavbar}>{isActive ? <X /> : <Menu/>}</button>
+              <div className="mr-10 my-5 text-3xl hidden sm:block">
+                <button onClick={toggleNavbar}>
+                  {isActive ? <X /> : <Menu />}
+                </button>
               </div>
             </nav>
-              {isActive && (
-                <div className="flex  items-center basis-1">
-                  <NavbarPage />
-                </div>
-              )}
+            {isActive && (
+              <div className="flex  items-center basis-1">
+                <NavbarPage />
+              </div>
+            )}
           </div>
           {/* Content */}
           {/* // Hero Section Start */}
@@ -46,39 +51,39 @@ const Program = () => {
               src="images/img_heroimage3.png"
               alt="heroimageThree"
             />
-             <div className="absolute flex flex-col items-center justify-start right-[3%] top-2/4 w-[46%]">
-                  <Text
-                    className="md:text-5xl text-9xl text-center text-white-A700 md:flex md:flex-col md:items-center md:justify-center md:mt-[-200px] md:w-[100%]"
-                    size="txtCaveatBrushRegular128"
-                  >
-                    Pilar Cendekia
-                  </Text>
-                  <Text
-                    className="text-2xl md:text-[22px] text-center text-white-A700 sm:text-xl md:text-sm md:mt-5"
-                    size="txtAbhayaLibreExtraBold24"
-                  >
-                    Dengan BIAYA MINIMAL, kita raih PRESTASI MAKSIMAL
-                  </Text>
-                  <div className="flex sm:flex-col flex-row font-abhayalibreextrabold gap-[52px] items-center justify-end mt-[69px] w-[69%] md:w-full md:gap-[40px] md:justify-center">
-                    <Button
-                      className="cursor-pointer font-extrabold leading-[normal] min-w-[200px] text-center text-xl hover:bg-yellow-600 hover:text-slate-100 md:text-sm md:min-w-[150px]"
-                      shape="round"
-                      color="white_A700"
-                      size="xs"
-                    >
-                      Hubungi Kami
-                    </Button>
-                    <Button
-                      className="common-pointer cursor-pointer font-extrabold leading-[normal] min-w-[200px] text-center text-xl hover:bg-yellow-600 hover:text-slate-100 md:text-sm md:min-w-[150px]"
-                      onClick={() => navigate("/daftarpilarsekarangdesktop")}
-                      shape="round"
-                      color="white_A700"
-                      size="xs"
-                    >
-                      Daftar Sekarang
-                    </Button>
-                  </div>
-                </div>
+            <div className="absolute flex flex-col items-center justify-start right-[3%] top-2/4 w-[46%]">
+              <Text
+                className="md:text-5xl text-9xl text-center text-white-A700 md:flex md:flex-col md:items-center md:justify-center md:mt-[-200px] md:w-[100%]"
+                size="txtCaveatBrushRegular128"
+              >
+                Pilar Cendekia
+              </Text>
+              <Text
+                className="text-2xl md:text-[22px] text-center text-white-A700 sm:text-xl md:text-sm md:mt-5"
+                size="txtAbhayaLibreExtraBold24"
+              >
+                Dengan BIAYA MINIMAL, kita raih PRESTASI MAKSIMAL
+              </Text>
+              <div className="flex sm:flex-col flex-row font-abhayalibreextrabold gap-[52px] items-center justify-end mt-[69px] w-[69%] md:w-full md:gap-[40px] md:justify-center">
+                <Button
+                  className="cursor-pointer font-extrabold leading-[normal] min-w-[200px] text-center text-xl hover:bg-yellow-600 hover:text-slate-100 md:text-sm md:min-w-[150px]"
+                  shape="round"
+                  color="white_A700"
+                  size="xs"
+                >
+                  Hubungi Kami
+                </Button>
+                <Button
+                  className="common-pointer cursor-pointer font-extrabold leading-[normal] min-w-[200px] text-center text-xl hover:bg-yellow-600 hover:text-slate-100 md:text-sm md:min-w-[150px]"
+                  onClick={() => navigate("/daftarpilarsekarangdesktop")}
+                  shape="round"
+                  color="white_A700"
+                  size="xs"
+                >
+                  Daftar Sekarang
+                </Button>
+              </div>
+            </div>
 
             <div className="bg-gradient flex flex-col font-abrilfatface items-center justify-start p-11 md:px-10 sm:px-5 shadow-bs w-full">
               <div className="flex flex-col items-center justify-center p-10 md:min-w-min ">
@@ -143,33 +148,23 @@ const Program = () => {
 
                   {/* Sosmet Section */}
                   <div className="flex flex-row items-start justify-center mt-[33px] w-[24%] md:w-full">
-                    <Img
-                      className="h-14 w-14 hover:cursor-pointer text-white-A700 "
-                      src="images/img_mingcuteyoutubefill.svg"
-                      alt="mingcuteyoutube"
-                    />
-                    <Img
-                      className="h-[43px] ml-[17px] mt-[7px] w-[43px] hover:cursor-pointer text-white-A700"
-                      src="images/img_info.svg"
-                      alt="info"
-                    />
-                    <Img
-                      className="h-12 ml-[13px] mt-0.5 w-[49px] hover:cursor-pointer text-white-A700"
-                      src="images/img_riwhatsappfill.svg"
-                      alt="riwhatsappfill"
-                    />
-                    <Img
-                      className="h-[51px] ml-[17px] mt-0.5 w-[50px] hover:cursor-pointer text-white-A700"
-                      src="images/img_icbaselineemail.svg"
-                      alt="icbaselineemail"
-                    />
-                    <Img
-                      className="h-[46px] ml-[17px] mt-0.5 w-[47px] hover:cursor-pointer text-white-A700"
-                      src="images/img_facebook.svg"
-                      alt="facebook"
-                    />
+                    <a href="https://www.youtube.com/channel/UCK6_IO85Lq5zMm3OgVgfshA">
+                      <GrYoutube className="text-4xl  mx-4" />
+                    </a>
+                    <a href="https://www.facebook.com/pilar.cendekia?mibextid=ZbWKwL">
+                      <FaInstagram className="text-4xl  mx-4" />
+                    </a>
+                    <a href=" http://wa.me/6282231838142">
+                      <FaWhatsapp className="text-4xl  mx-4" />
+                    </a>
+                    <a href="bimbelpilarcendekia@gmail.com">
+                      <CiMail className="text-4xl  mx-4" />
+                    </a>
+                    <a href="https://www.facebook.com/pilar.cendekia?mibextid=ZbWKwL">
+                      <CiFacebook className="text-4xl mx-4" />
+                    </a>
                   </div>
-                   {/* sosmet Section end */}
+                  {/* sosmet Section end */}
                   <div className="flex font-abrilfatface h-[602px] md:h-[631px] sm:h-[905px] justify-end mt-[31px] relative w-[98%] md:w-full">
                     <div className="flex flex-row md:gap-10 h-full items-center justify-between mb-[241px] mt-auto mx-auto w-[97%]">
                       {/* <Img
@@ -186,11 +181,9 @@ const Program = () => {
 
                     {/* Croousel Testimoni */}
                     <div className="border border-black-900 border-solid flex flex-col min-h-full inset-[0] items-center justify-center m-auto p-[43px] sm:p-0 sm:mr-[170px] sm:min-w-[500px] sm:h-[200px] min-w-full sm:items-center sm:justify-center ">
-
                       <Crousel />
                     </div>
                     {/* Crousel End */}
-
                   </div>
                 </div>
               </div>
@@ -199,49 +192,7 @@ const Program = () => {
         </div>
       </div>
       {/* Footer section */}
-      <footer className="bg-gray-800 flex font-inter items-center justify-center md:px-5 w-full">
-        <div className="flex  flex-row md:gap-5 items-center justify-center mb-[21px] ml-[67px] mr-[105px] mt-[26px] w-[89%]">
-          <Text className="text-white-A700 text-xl sm:text-[13px]" size="txtInterRegular20">
-            Copyright{" "}
-          </Text>
-          <Img
-            className="h-5 md:ml-[0] ml-[9px] w-[21px]"
-            src="images/img_clock.svg"
-            alt="clock"
-          />
-          <Text
-            className="ml-2 md:ml-[0] text-white-A700 text-xl sm:text-[13px]"
-            size="txtInterRegular20"
-          >
-            2023 pilarcendekia. Allright reserved
-          </Text>
-          <Img
-            className="h-[30px] md:ml-[0] ml-[624px] md:mt-0 mt-0.5 w-[30px]"
-            src="images/img_group.svg"
-            alt="group"
-          />
-          <Img
-            className="h-[23px] md:ml-[0] ml-[9px]"
-            src="images/img_info_white_a700.svg"
-            alt="info_One"
-          />
-          <Img
-            className="h-[25px] md:ml-[0] ml-[9px] w-[26px]"
-            src="images/img_riwhatsappfill_white_a700.svg"
-            alt="riwhatsappfill_One"
-          />
-          <Img
-            className="h-[27px] md:ml-[0] ml-[9px] w-[27px]"
-            src="images/img_icbaselineemail_white_a700.svg"
-            alt="icbaselineemail_One"
-          />
-          <Img
-            className="h-6 md:ml-[0] ml-[9px] w-[25px]"
-            src="images/img_facebook_white_a700.svg"
-            alt="facebook_One"
-          />
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 };

@@ -7,7 +7,7 @@ export { List } from "./List";
 export { Text } from "./Text";
 export { Crousel } from "./Crousel";
 export { NavbarPage } from "./NavbarDrop";
-
+export {Footer} from "./Footer";
 
 
 // {isOpen ? <AiOutlineCaretDown className="h-8" /> : <AiOutlineCaretUp className="h-8"/>}
