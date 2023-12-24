@@ -103,9 +103,9 @@ const Recruiter = () => {
                 </Text>
                 <div className="bg-gray-100 border border-blue_gray-100 border-solid h-[45px] rounded-[5px] w-[62%]"></div>
               </div>
-              <div className="flex sm:flex-col flex-row sm:gap-10 gap-[67px] items-start justify-start mt-[37px] w-[76%] md:w-full">
+              <div className="flex sm:flex-col flex-row sm:gap-10 gap-[97px] items-start justify-start mt-[37px] w-[76%] md:w-full">
                 <Text
-                  className="text-base text-black-900"
+                  className="text-base text-black-900 "
                   size="txtInterRegular16"
                 >
                   Nomor telepon

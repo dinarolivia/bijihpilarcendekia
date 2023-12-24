@@ -162,24 +162,30 @@ const DaftarPage = () => {
                     <CheckBox
                       className="leading-[normal] md:ml-[0] ml-[3px] mt-2 text-base text-left"
                       inputClassName="border border-blue_gray-100 border-solid h-[13px] mr-[5px] w-[13px]"
+                      name="kelas"
+                      id="kelas"
+                      label="Informasi Kelas"
                     ></CheckBox>
+                      <CheckBox
+                        className="leading-[normal] md:ml-[0] ml-[3px] mt-2 text-base text-left"
+                        inputClassName="border border-blue_gray-100 border-solid h-[13px] mr-[5px] w-[13px]"
+                        name="biaya-biaya"
+                        id="biaya-biaya"
+                        label="Biaya-Biaya"
+                      ></CheckBox>
+                      <CheckBox
+                        className="leading-[normal] md:ml-[0] ml-[3px] mt-2 text-base text-left"
+                        inputClassName="border border-blue_gray-100 border-solid h-[13px] mr-[5px] w-[13px]"
+                        name="Lainnya"
+                        id="lainnya"
+                        label="lainnya, Tuliskan:"
+                      ></CheckBox>
                     <CheckBox
                       className="leading-[normal] md:ml-[0] ml-[3px] mt-2 text-base text-left"
                       inputClassName="border border-blue_gray-100 border-solid h-[13px] mr-[5px] w-[13px]"
                       name="matapelajaran"
                       id="matapelajaran"
                       label="Mata Pelajaran"
-                    ></CheckBox>
-                    <CheckBox
-                      className="leading-[normal] md:ml-[0] ml-[3px] mt-2 text-base text-left"
-                      inputClassName="border border-blue_gray-100 border-solid h-[13px] mr-[5px] w-[13px]"
-                      name="biaya-biaya"
-                      id="biaya-biaya"
-                      label="Biaya-Biaya"
-                    ></CheckBox>
-                    <CheckBox
-                      className="leading-[normal] md:ml-[0] ml-[3px] mt-2 text-base text-left"
-                      inputClassName="border border-blue_gray-100 border-solid h-[13px] mr-[5px] w-[13px]"
                     ></CheckBox>
 
                     <Text

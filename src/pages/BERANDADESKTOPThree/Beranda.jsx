@@ -67,11 +67,14 @@ const Program = () => {
               <div className="flex sm:flex-col flex-row font-abhayalibreextrabold gap-[52px] items-center justify-end mt-[69px] w-[69%] md:w-full md:gap-[40px] md:justify-center">
                 <Button
                   className="cursor-pointer font-extrabold leading-[normal] min-w-[200px] text-center text-xl hover:bg-yellow-600 hover:text-slate-100 md:text-sm md:min-w-[150px]"
+                  
                   shape="round"
                   color="white_A700"
                   size="xs"
-                >
+                ><a href=" http://wa.me/6282231838142">
+
                   Hubungi Kami
+                </a>
                 </Button>
                 <Button
                   className="common-pointer cursor-pointer font-extrabold leading-[normal] min-w-[200px] text-center text-xl hover:bg-yellow-600 hover:text-slate-100 md:text-sm md:min-w-[150px]"
